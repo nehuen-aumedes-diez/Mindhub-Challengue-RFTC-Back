@@ -5,12 +5,12 @@ const schema = joi.object({
     "any.required":"el campo es obligatorio",
   }),
   foto1: joi.string().required().uri().messages({
-    "any.required": "Complete this input",
-    "string.empty": "Enter the photo URL",
+    "any.required": "el campo es obligatorio",
+    "string.empty": "Coloca el URL de la foto",
   }),
   foto2: joi.string().required().uri().messages({
-    "any.required": "Complete this input",
-    "string.empty": "Enter the photo URL",
+    "any.required": "el campo es obligatorio",
+    "string.empty": "Coloca el URL de la foto",
   }),
   talle: joi.string().required().messages({
     "any.required":"el campo es obligatorio",
