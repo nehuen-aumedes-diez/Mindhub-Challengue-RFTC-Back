@@ -1,9 +1,15 @@
-var express = require('express');
-var router = express.Router();
+let router = require("express").Router();
 
-/* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
-});
+let gorra = require('./gorra')
+let remeraF = require('./remeraF')
+let remeraM = require('./remeraM')
+let buzo = require('./buzo')
+
+
+router.use("/api/gorra", gorra);
+router.use("/api/remeraF", remeraF);
+router.use("/api/remeraM", remeraM);
+router.use("/api/buzo", buzo);
+
 
 module.exports = router;
