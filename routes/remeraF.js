@@ -2,7 +2,7 @@ let router = require('express').Router()
 const schema = require('../schemas/remera')
 const validatorRemera = require('../middlewares/validadorRemera')
 
-let {create, read, update, destroy, readOne} = require('../controllers/remera')
+let {create, read, update, destroy, readOne} = require('../controllers/remeraF')
 
 router.route('/').get(read)
 router.route('/').post(validatorRemera(schema),create)
