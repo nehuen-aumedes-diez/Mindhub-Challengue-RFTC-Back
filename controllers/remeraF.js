@@ -1,4 +1,4 @@
-const Remera = require('../models/remera')
+const Remera = require('../models/CamisetaMujer')
 
 const controller = {
 
