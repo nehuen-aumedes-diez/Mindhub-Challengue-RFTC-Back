@@ -6,7 +6,8 @@ let camisetasHombres = [
         foto2: 'https://cdn.shopify.com/s/files/1/0015/5841/3357/products/ANCLA-SQUARE_550x.png?v=1572950486',
         talle: 'S',
         descripcion: 'Puro y exclusivo producto de moda. Calidad premium fabricado en Perú. 100% algodón de alta calidad como del bordado. Corte slim fit.',
-        stock: 3
+        stock: 3,
+        precio: 9500,
     },
     {
         nombre: 'Xeneize',
@@ -14,7 +15,8 @@ let camisetasHombres = [
         foto2: 'https://cdn.shopify.com/s/files/1/0015/5841/3357/products/ANCLA-SQUARE_550x.png?v=1572950486',
         talle: 'M',
         descripcion: 'Puro y exclusivo producto de moda. Calidad premium fabricado en Perú. 100% algodón de alta calidad como del bordado. Corte slim fit.',
-        stock: 5
+        stock: 5,
+        precio: 9500,
     },
     {
         nombre: 'Xeneize',
@@ -22,7 +24,8 @@ let camisetasHombres = [
         foto2: 'https://cdn.shopify.com/s/files/1/0015/5841/3357/products/ANCLA-SQUARE_550x.png?v=1572950486',
         talle: 'L',
         descripcion: 'Puro y exclusivo producto de moda. Calidad premium fabricado en Perú. 100% algodón de alta calidad como del bordado. Corte slim fit.',
-        stock: 6
+        stock: 6,
+        precio: 9500,
     },
     {
         nombre: 'Xeneize',
@@ -30,7 +33,8 @@ let camisetasHombres = [
         foto2: 'https://cdn.shopify.com/s/files/1/0015/5841/3357/products/ANCLA-SQUARE_550x.png?v=1572950486',
         talle: 'XL',
         descripcion: 'Puro y exclusivo producto de moda. Calidad premium fabricado en Perú. 100% algodón de alta calidad como del bordado. Corte slim fit.',
-        stock: 1
+        stock: 1,
+        precio: 9500,
     },
     // MILLONARIO (River)
     {
@@ -39,7 +43,8 @@ let camisetasHombres = [
         foto2: 'https://cdn.shopify.com/s/files/1/0015/5841/3357/products/Blueaventurina_550x.jpg?v=1596464726',
         talle: 'S',
         descripcion: 'Cool packaging. Calidad premium fabricado en Brasil. 100% algodón de alta calidad como del bordado. Corte slim fit.',
-        stock: 2
+        stock: 2,
+        precio: 9500,
     },
     {
         nombre: 'Millonario',
@@ -47,7 +52,8 @@ let camisetasHombres = [
         foto2: 'https://cdn.shopify.com/s/files/1/0015/5841/3357/products/Blueaventurina_550x.jpg?v=1596464726',
         talle: 'M',
         descripcion: 'Cool packaging. Calidad premium fabricado en Brasil. 100% algodón de alta calidad como del bordado. Corte slim fit.',
-        stock: 4
+        stock: 4,
+        precio: 9500,
     },
     {
         nombre: 'Millonario',
@@ -55,7 +61,8 @@ let camisetasHombres = [
         foto2: 'https://cdn.shopify.com/s/files/1/0015/5841/3357/products/Blueaventurina_550x.jpg?v=1596464726',
         talle: 'L',
         descripcion: 'Cool packaging. Calidad premium fabricado en Brasil. 100% algodón de alta calidad como del bordado. Corte slim fit.',
-        stock: 4
+        stock: 4,
+        precio: 9500,
     },
     {
         nombre: 'Millonario',
@@ -63,7 +70,8 @@ let camisetasHombres = [
         foto2: 'https://cdn.shopify.com/s/files/1/0015/5841/3357/products/Blueaventurina_550x.jpg?v=1596464726',
         talle: 'XL',
         descripcion: 'Cool packaging. Calidad premium fabricado en Brasil. 100% algodón de alta calidad como del bordado. Corte slim fit.',
-        stock: 15
+        stock: 15,
+        precio: 9500,
     },
     // EL CICLÓN (San Lorenzo)
     {
@@ -72,7 +80,8 @@ let camisetasHombres = [
         foto2: 'https://cdn.shopify.com/s/files/1/0015/5841/3357/products/CAJAS-CUERVO_550x.png?v=1560877618',
         talle: 'S',
         descripcion: 'Calidad premium fabricado en Perú. Lavado a máquina. 100% algodón de alta calidad como del bordado. Corte slim fit.',
-        stock: 6
+        stock: 6,
+        precio: 8300,
     },
     {
         nombre: 'El Ciclón',
@@ -80,7 +89,8 @@ let camisetasHombres = [
         foto2: 'https://cdn.shopify.com/s/files/1/0015/5841/3357/products/CAJAS-CUERVO_550x.png?v=1560877618',
         talle: 'M',
         descripcion: 'Calidad premium fabricado en Perú. Lavado a máquina. 100% algodón de alta calidad como del bordado. Corte slim fit.',
-        stock: 3
+        stock: 3,
+        precio: 8300,
     },
     {
         nombre: 'El Ciclón',
@@ -88,7 +98,8 @@ let camisetasHombres = [
         foto2: 'https://cdn.shopify.com/s/files/1/0015/5841/3357/products/CAJAS-CUERVO_550x.png?v=1560877618',
         talle: 'L',
         descripcion: 'Calidad premium fabricado en Perú. Lavado a máquina. 100% algodón de alta calidad como del bordado. Corte slim fit.',
-        stock: 5
+        stock: 5,
+        precio: 8300,
     },
     {
         nombre: 'El Ciclón',
@@ -96,7 +107,8 @@ let camisetasHombres = [
         foto2: 'https://cdn.shopify.com/s/files/1/0015/5841/3357/products/CAJAS-CUERVO_550x.png?v=1560877618',
         talle: 'XL',
         descripcion: 'Calidad premium fabricado en Perú. Lavado a máquina. 100% algodón de alta calidad como del bordado. Corte slim fit.',
-        stock: 5
+        stock: 5,
+        precio: 8300,
     },
     // EL ROJO (Independiente)
     {
@@ -105,7 +117,8 @@ let camisetasHombres = [
         foto2: 'https://cdn.shopify.com/s/files/1/0015/5841/3357/products/DIABLO-2SMALL_550x.png?v=1560032830',
         talle: 'S',
         descripcion: 'Calidad premium fabricado en Perú. Lavado a máquina. 100% algodón de alta calidad como del bordado. Corte slim fit.',
-        stock: 1
+        stock: 1,
+        precio: 8300,
     },
     {
         nombre: 'El Rojo',
@@ -113,7 +126,8 @@ let camisetasHombres = [
         foto2: 'https://cdn.shopify.com/s/files/1/0015/5841/3357/products/DIABLO-2SMALL_550x.png?v=1560032830',
         talle: 'M',
         descripcion: 'Calidad premium fabricado en Perú. Lavado a máquina. 100% algodón de alta calidad como del bordado. Corte slim fit.',
-        stock: 4
+        stock: 4,
+        precio: 8300,
     },
     {
         nombre: 'El Rojo',
@@ -121,7 +135,8 @@ let camisetasHombres = [
         foto2: 'https://cdn.shopify.com/s/files/1/0015/5841/3357/products/DIABLO-2SMALL_550x.png?v=1560032830',
         talle: 'L',
         descripcion: 'Calidad premium fabricado en Perú. Lavado a máquina. 100% algodón de alta calidad como del bordado. Corte slim fit.',
-        stock: 11
+        stock: 11,
+        precio: 8300,
     },
     {
         nombre: 'El Rojo',
@@ -129,7 +144,8 @@ let camisetasHombres = [
         foto2: 'https://cdn.shopify.com/s/files/1/0015/5841/3357/products/DIABLO-2SMALL_550x.png?v=1560032830',
         talle: 'XL',
         descripcion: 'Calidad premium fabricado en Perú. Lavado a máquina. 100% algodón de alta calidad como del bordado. Corte slim fit.',
-        stock: 7
+        stock: 7,
+        precio: 8300,
     },
     // ACADEMIA (Racing)
     {
@@ -138,7 +154,8 @@ let camisetasHombres = [
         foto2: 'https://cdn.shopify.com/s/files/1/0015/5841/3357/products/ACADE_550x.png?v=1560032975',
         talle: 'S',
         descripcion: 'Calidad premium fabricado en Perú. Lavado a máquina. 100% algodón de alta calidad como del bordado. Corte slim fit.',
-        stock: 3
+        stock: 3,
+        precio: 8300,
     },
     {
         nombre: 'Academia',
@@ -146,7 +163,8 @@ let camisetasHombres = [
         foto2: 'https://cdn.shopify.com/s/files/1/0015/5841/3357/products/ACADE_550x.png?v=1560032975',
         talle: 'M',
         descripcion: 'Calidad premium fabricado en Perú. Lavado a máquina. 100% algodón de alta calidad como del bordado. Corte slim fit.',
-        stock: 4
+        stock: 4,
+        precio: 8300,
     },
     {
         nombre: 'Academia',
@@ -154,7 +172,8 @@ let camisetasHombres = [
         foto2: 'https://cdn.shopify.com/s/files/1/0015/5841/3357/products/ACADE_550x.png?v=1560032975',
         talle: 'L',
         descripcion: 'Calidad premium fabricado en Perú. Lavado a máquina. 100% algodón de alta calidad como del bordado. Corte slim fit.',
-        stock: 8
+        stock: 8,
+        precio: 8300,
     },
     {
         nombre: 'Academia',
@@ -162,7 +181,8 @@ let camisetasHombres = [
         foto2: 'https://cdn.shopify.com/s/files/1/0015/5841/3357/products/ACADE_550x.png?v=1560032975',
         talle: 'XL',
         descripcion: 'Calidad premium fabricado en Perú. Lavado a máquina. 100% algodón de alta calidad como del bordado. Corte slim fit.',
-        stock: 5
+        stock: 5,
+        precio: 8300,
     },
     // PINCHARRATA (Estudiantes)
     {
@@ -171,7 +191,8 @@ let camisetasHombres = [
         foto2: 'https://cdn.shopify.com/s/files/1/0015/5841/3357/products/MODEL-ELLEON_550x.png?v=1610876303',
         talle: 'S',
         descripcion: 'Calidad premium fabricado en Perú. Lavado a máquina. 100% algodón de alta calidad como del bordado. Corte slim fit.',
-        stock: 2
+        stock: 2,
+        precio: 8300,
     },
     {
         nombre: 'Pincharrata',
@@ -179,7 +200,8 @@ let camisetasHombres = [
         foto2: 'https://cdn.shopify.com/s/files/1/0015/5841/3357/products/MODEL-ELLEON_550x.png?v=1610876303',
         talle: 'M',
         descripcion: 'Calidad premium fabricado en Perú. Lavado a máquina. 100% algodón de alta calidad como del bordado. Corte slim fit.',
-        stock: 3
+        stock: 3,
+        precio: 8300,
     },
     {
         nombre: 'Pincharrata',
@@ -187,7 +209,8 @@ let camisetasHombres = [
         foto2: 'https://cdn.shopify.com/s/files/1/0015/5841/3357/products/MODEL-ELLEON_550x.png?v=1610876303',
         talle: 'L',
         descripcion: 'Calidad premium fabricado en Perú. Lavado a máquina. 100% algodón de alta calidad como del bordado. Corte slim fit.',
-        stock: 7
+        stock: 7,
+        precio: 8300,
     },
     {
         nombre: 'Pincharrata',
@@ -195,7 +218,8 @@ let camisetasHombres = [
         foto2: 'https://cdn.shopify.com/s/files/1/0015/5841/3357/products/MODEL-ELLEON_550x.png?v=1610876303',
         talle: 'XL',
         descripcion: 'Calidad premium fabricado en Perú. Lavado a máquina. 100% algodón de alta calidad como del bordado. Corte slim fit.',
-        stock: 5
+        stock: 5,
+        precio: 8300,
     },
     // LA 'T' (Talleres CBA)
     {
@@ -204,7 +228,8 @@ let camisetasHombres = [
         foto2: 'https://cdn.shopify.com/s/files/1/0015/5841/3357/products/MODEL-MATADOR_2000x.png?v=1581328056',
         talle: 'S',
         descripcion: 'Calidad premium fabricado en Perú. Lavado a máquina. 100% algodón de alta calidad como del bordado. Corte slim fit.',
-        stock: 6
+        stock: 6,
+        precio: 8300,
     },
     {
         nombre: "La 'T'",
@@ -212,7 +237,8 @@ let camisetasHombres = [
         foto2: 'https://cdn.shopify.com/s/files/1/0015/5841/3357/products/MODEL-MATADOR_2000x.png?v=1581328056',
         talle: 'M',
         descripcion: 'Calidad premium fabricado en Perú. Lavado a máquina. 100% algodón de alta calidad como del bordado. Corte slim fit.',
-        stock: 5
+        stock: 5,
+        precio: 8300,
     },
     {
         nombre: "La 'T'",
@@ -220,7 +246,8 @@ let camisetasHombres = [
         foto2: 'https://cdn.shopify.com/s/files/1/0015/5841/3357/products/MODEL-MATADOR_2000x.png?v=1581328056',
         talle: 'L',
         descripcion: 'Calidad premium fabricado en Perú. Lavado a máquina. 100% algodón de alta calidad como del bordado. Corte slim fit.',
-        stock: 5
+        stock: 5,
+        precio: 8300,
     },
     {
         nombre: "La 'T'",
@@ -228,7 +255,8 @@ let camisetasHombres = [
         foto2: 'https://cdn.shopify.com/s/files/1/0015/5841/3357/products/MODEL-MATADOR_2000x.png?v=1581328056',
         talle: 'XL',
         descripcion: 'Calidad premium fabricado en Perú. Lavado a máquina. 100% algodón de alta calidad como del bordado. Corte slim fit.',
-        stock: 5
+        stock: 5,
+        precio: 8300,
     },
     //PANDILLA (Velez)
     {
@@ -237,7 +265,8 @@ let camisetasHombres = [
         foto2: 'https://cdn.shopify.com/s/files/1/0015/5841/3357/products/Leitomarafioti_550x.jpg?v=1610876412',
         talle: 'S',
         descripcion: 'Calidad premium fabricado en Perú. Lavado a máquina. 100% algodón de alta calidad como del bordado. Corte slim fit.',
-        stock: 6
+        stock: 6,
+        precio: 8300,
     },
     {
         nombre: "Pandilla",
@@ -245,7 +274,8 @@ let camisetasHombres = [
         foto2: 'https://cdn.shopify.com/s/files/1/0015/5841/3357/products/Leitomarafioti_550x.jpg?v=1610876412',
         talle: 'M',
         descripcion: 'Calidad premium fabricado en Perú. Lavado a máquina. 100% algodón de alta calidad como del bordado. Corte slim fit.',
-        stock: 13
+        stock: 13,
+        precio: 8300,
     },
     {
         nombre: "Pandilla",
@@ -253,7 +283,8 @@ let camisetasHombres = [
         foto2: 'https://cdn.shopify.com/s/files/1/0015/5841/3357/products/Leitomarafioti_550x.jpg?v=1610876412',
         talle: 'L',
         descripcion: 'Calidad premium fabricado en Perú. Lavado a máquina. 100% algodón de alta calidad como del bordado. Corte slim fit.',
-        stock: 7
+        stock: 7,
+        precio: 8300,
     },
     {
         nombre: "Pandilla",
@@ -261,7 +292,8 @@ let camisetasHombres = [
         foto2: 'https://cdn.shopify.com/s/files/1/0015/5841/3357/products/Leitomarafioti_550x.jpg?v=1610876412',
         talle: 'XL',
         descripcion: 'Calidad premium fabricado en Perú. Lavado a máquina. 100% algodón de alta calidad como del bordado. Corte slim fit.',
-        stock: 4
+        stock: 4,
+        precio: 8300,
     },
     // SEMILLERO (Argentinos Juniors)
     {
@@ -270,7 +302,8 @@ let camisetasHombres = [
         foto2: 'https://cdn.shopify.com/s/files/1/0015/5841/3357/products/MODEL-ARGENTINA-BICHO_550x.jpg?v=1605916459',
         talle: 'S',
         descripcion: 'Calidad premium fabricado en Perú. Lavado a máquina. 100% algodón de alta calidad como del bordado. Corte slim fit.',
-        stock: 15
+        stock: 15,
+        precio: 8300,
     },
     {
         nombre: "Semillero",
@@ -278,7 +311,8 @@ let camisetasHombres = [
         foto2: 'https://cdn.shopify.com/s/files/1/0015/5841/3357/products/MODEL-ARGENTINA-BICHO_550x.jpg?v=1605916459',
         talle: 'M',
         descripcion: 'Calidad premium fabricado en Perú. Lavado a máquina. 100% algodón de alta calidad como del bordado. Corte slim fit.',
-        stock: 9
+        stock: 9,
+        precio: 8300,
     },
     {
         nombre: "Semillero",
@@ -286,7 +320,8 @@ let camisetasHombres = [
         foto2: 'https://cdn.shopify.com/s/files/1/0015/5841/3357/products/MODEL-ARGENTINA-BICHO_550x.jpg?v=1605916459',
         talle: 'L',
         descripcion: 'Calidad premium fabricado en Perú. Lavado a máquina. 100% algodón de alta calidad como del bordado. Corte slim fit.',
-        stock: 6
+        stock: 6,
+        precio: 8300,
     },
     {
         nombre: "Semillero",
@@ -294,7 +329,8 @@ let camisetasHombres = [
         foto2: 'https://cdn.shopify.com/s/files/1/0015/5841/3357/products/MODEL-ARGENTINA-BICHO_550x.jpg?v=1605916459',
         talle: 'XL',
         descripcion: 'Calidad premium fabricado en Perú. Lavado a máquina. 100% algodón de alta calidad como del bordado. Corte slim fit.',
-        stock: 12
+        stock: 12,
+        precio: 8300,
     },
     //EL LOBO (Gimnasia de La Plata)
     {
@@ -303,7 +339,8 @@ let camisetasHombres = [
         foto2: 'https://cdn.shopify.com/s/files/1/0015/5841/3357/products/LOBO-MODEL-1_550x.jpg?v=1610876341',
         talle: 'S',
         descripcion: 'Calidad premium fabricado en Perú. Lavado a máquina. 100% algodón de alta calidad como del bordado. Corte slim fit.',
-        stock: 2
+        stock: 2,
+        precio: 8300,
     },
     {
         nombre: "El Lobo",
@@ -311,7 +348,8 @@ let camisetasHombres = [
         foto2: 'https://cdn.shopify.com/s/files/1/0015/5841/3357/products/LOBO-MODEL-1_550x.jpg?v=1610876341',
         talle: 'M',
         descripcion: 'Calidad premium fabricado en Perú. Lavado a máquina. 100% algodón de alta calidad como del bordado. Corte slim fit.',
-        stock: 6
+        stock: 6,
+        precio: 8300,
     },
     {
         nombre: "El Lobo",
@@ -319,7 +357,8 @@ let camisetasHombres = [
         foto2: 'https://cdn.shopify.com/s/files/1/0015/5841/3357/products/LOBO-MODEL-1_550x.jpg?v=1610876341',
         talle: 'L',
         descripcion: 'Calidad premium fabricado en Perú. Lavado a máquina. 100% algodón de alta calidad como del bordado. Corte slim fit.',
-        stock: 5
+        stock: 5,
+        precio: 8300,
     },
     {
         nombre: "El Lobo",
@@ -327,7 +366,8 @@ let camisetasHombres = [
         foto2: 'https://cdn.shopify.com/s/files/1/0015/5841/3357/products/LOBO-MODEL-1_550x.jpg?v=1610876341',
         talle: 'XL',
         descripcion: 'Calidad premium fabricado en Perú. Lavado a máquina. 100% algodón de alta calidad como del bordado. Corte slim fit.',
-        stock: 6
+        stock: 6,
+        precio: 8300,
     },
     // LEPROSO (Newell's Old Boys)
     {
@@ -336,7 +376,8 @@ let camisetasHombres = [
         foto2: 'https://cdn.shopify.com/s/files/1/0015/5841/3357/products/pachi_nob_87_550x.png?v=1610876590',
         talle: 'S',
         descripcion: 'Calidad premium fabricado en Perú. Lavado a máquina. 100% algodón de alta calidad como del bordado. Corte slim fit.',
-        stock: 6
+        stock: 6,
+        precio: 8300,
     },
     {
         nombre: "Leproso",
@@ -344,7 +385,8 @@ let camisetasHombres = [
         foto2: 'https://cdn.shopify.com/s/files/1/0015/5841/3357/products/pachi_nob_87_550x.png?v=1610876590',
         talle: 'M',
         descripcion: 'Calidad premium fabricado en Perú. Lavado a máquina. 100% algodón de alta calidad como del bordado. Corte slim fit.',
-        stock: 2
+        stock: 2,
+        precio: 8300,
     },
     {
         nombre: "Leproso",
@@ -352,7 +394,8 @@ let camisetasHombres = [
         foto2: 'https://cdn.shopify.com/s/files/1/0015/5841/3357/products/pachi_nob_87_550x.png?v=1610876590',
         talle: 'L',
         descripcion: 'Calidad premium fabricado en Perú. Lavado a máquina. 100% algodón de alta calidad como del bordado. Corte slim fit.',
-        stock: 1
+        stock: 1,
+        precio: 8300,
     },
     {
         nombre: "Leproso",
@@ -360,7 +403,8 @@ let camisetasHombres = [
         foto2: 'https://cdn.shopify.com/s/files/1/0015/5841/3357/products/pachi_nob_87_550x.png?v=1610876590',
         talle: 'XL',
         descripcion: 'Calidad premium fabricado en Perú. Lavado a máquina. 100% algodón de alta calidad como del bordado. Corte slim fit.',
-        stock: 4
+        stock: 4,
+        precio: 8300,
     },
     // CANALLA (Rosario Central)
     {
@@ -369,7 +413,8 @@ let camisetasHombres = [
         foto2: 'https://cdn.shopify.com/s/files/1/0015/5841/3357/products/MODELS-ARGENTINA-CANALLA-1_550x.png?',
         talle: 'S',
         descripcion: 'Calidad premium fabricado en Perú. Lavado a máquina. 100% algodón de alta calidad como del bordado. Corte slim fit.',
-        stock: 18
+        stock: 18,
+        precio: 8300,
     },
     {
         nombre: "Canalla",
@@ -377,7 +422,8 @@ let camisetasHombres = [
         foto2: 'https://cdn.shopify.com/s/files/1/0015/5841/3357/products/MODELS-ARGENTINA-CANALLA-1_550x.png?',
         talle: 'M',
         descripcion: 'Calidad premium fabricado en Perú. Lavado a máquina. 100% algodón de alta calidad como del bordado. Corte slim fit.',
-        stock: 17
+        stock: 17,
+        precio: 8300,
     },
     {
         nombre: "Canalla",
@@ -385,7 +431,8 @@ let camisetasHombres = [
         foto2: 'https://cdn.shopify.com/s/files/1/0015/5841/3357/products/MODELS-ARGENTINA-CANALLA-1_550x.png?',
         talle: 'L',
         descripcion: 'Calidad premium fabricado en Perú. Lavado a máquina. 100% algodón de alta calidad como del bordado. Corte slim fit.',
-        stock: 6
+        stock: 6,
+        precio: 8300,
     },
     {
         nombre: "Canalla",
@@ -393,7 +440,8 @@ let camisetasHombres = [
         foto2: 'https://cdn.shopify.com/s/files/1/0015/5841/3357/products/MODELS-ARGENTINA-CANALLA-1_550x.png?',
         talle: 'XL',
         descripcion: 'Calidad premium fabricado en Perú. Lavado a máquina. 100% algodón de alta calidad como del bordado. Corte slim fit.',
-        stock: 11
+        stock: 11,
+        precio: 8300,
     },
     // TATENGUE (Union de Santa Fe)
     {
@@ -402,7 +450,8 @@ let camisetasHombres = [
         foto2: 'https://cdn.shopify.com/s/files/1/0015/5841/3357/products/Xavi.espindola_550x.jpg?v=1596465050',
         talle: 'S',
         descripcion: 'Calidad premium fabricado en Perú. Lavado a máquina. 100% algodón de alta calidad como del bordado. Corte slim fit.',
-        stock: 15
+        stock: 15,
+        precio: 8300,
     },
     {
         nombre: "Tatengue",
@@ -410,7 +459,8 @@ let camisetasHombres = [
         foto2: 'https://cdn.shopify.com/s/files/1/0015/5841/3357/products/Xavi.espindola_550x.jpg?v=1596465050',
         talle: 'M',
         descripcion: 'Calidad premium fabricado en Perú. Lavado a máquina. 100% algodón de alta calidad como del bordado. Corte slim fit.',
-        stock: 15
+        stock: 15,
+        precio: 8300,
     },
     {
         nombre: "Tatengue",
@@ -418,7 +468,8 @@ let camisetasHombres = [
         foto2: 'https://cdn.shopify.com/s/files/1/0015/5841/3357/products/Xavi.espindola_550x.jpg?v=1596465050',
         talle: 'L',
         descripcion: 'Calidad premium fabricado en Perú. Lavado a máquina. 100% algodón de alta calidad como del bordado. Corte slim fit.',
-        stock: 8
+        stock: 8,
+        precio: 8300,
     },
     {
         nombre: "Tatengue",
@@ -426,7 +477,8 @@ let camisetasHombres = [
         foto2: 'https://cdn.shopify.com/s/files/1/0015/5841/3357/products/Xavi.espindola_550x.jpg?v=1596465050',
         talle: 'XL',
         descripcion: 'Calidad premium fabricado en Perú. Lavado a máquina. 100% algodón de alta calidad como del bordado. Corte slim fit.',
-        stock: 20
+        stock: 20,
+        precio: 8300,
     },
     // PIRATA (Belgrano de Cordoba)
     {
@@ -435,7 +487,8 @@ let camisetasHombres = [
         foto2: 'https://cdn.shopify.com/s/files/1/0015/5841/3357/products/PIRATA_550x.png?v=1581333725',
         talle: 'S',
         descripcion: 'Calidad premium fabricado en Perú. Lavado a máquina. 100% algodón de alta calidad como del bordado. Corte slim fit.',
-        stock: 7
+        stock: 7,
+        precio: 8300,
     },
     {
         nombre: "Pirata",
@@ -443,7 +496,8 @@ let camisetasHombres = [
         foto2: 'https://cdn.shopify.com/s/files/1/0015/5841/3357/products/PIRATA_550x.png?v=1581333725',
         talle: 'M',
         descripcion: 'Calidad premium fabricado en Perú. Lavado a máquina. 100% algodón de alta calidad como del bordado. Corte slim fit.',
-        stock: 13
+        stock: 13,
+        precio: 8300,
     },
     {
         nombre: "Pirata",
@@ -451,7 +505,8 @@ let camisetasHombres = [
         foto2: 'https://cdn.shopify.com/s/files/1/0015/5841/3357/products/PIRATA_550x.png?v=1581333725',
         talle: 'L',
         descripcion: 'Calidad premium fabricado en Perú. Lavado a máquina. 100% algodón de alta calidad como del bordado. Corte slim fit.',
-        stock: 8
+        stock: 8,
+        precio: 8300,
     },
     {
         nombre: "Pirata",
@@ -459,7 +514,8 @@ let camisetasHombres = [
         foto2: 'https://cdn.shopify.com/s/files/1/0015/5841/3357/products/PIRATA_550x.png?v=1581333725',
         talle: 'XL',
         descripcion: 'Calidad premium fabricado en Perú. Lavado a máquina. 100% algodón de alta calidad como del bordado. Corte slim fit.',
-        stock: 3
+        stock: 3,
+        precio: 8300,
     },
 ]
 
@@ -476,5 +532,6 @@ camisetasHombres.forEach(item => {
         talle: item.talle,
         descripcion: item.descripcion,
         stock: item.stock,
+        precio: item.precio,
     })
 })
