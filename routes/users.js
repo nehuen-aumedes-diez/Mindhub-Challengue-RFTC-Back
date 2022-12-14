@@ -1,6 +1,10 @@
 var express = require('express');
+const passport = require('../config/passport');
 var router = express.Router();
-const { signUp, verify } = require('../controllers/user')
+const { signUp, verify, signIn, logInToken, signout } = require('../controllers/user');
+const { accountExists } = require('../middlewares/accountExistsSignIn');
+const { accountHasBeenVerified } = require('../middlewares/accountHasBeenVerified');
+const mustSignIn = require('../middlewares/mustSignIn');
 // const {accountExists} = require('../middlewares/accountExistsSignUp')
 const validator = require('../middlewares/validator')
 const schema = require('../schemas/user')
@@ -12,7 +16,11 @@ const schema = require('../schemas/user')
 // });
 
 router.post('/signup',validator(schema), signUp)
+router.post('/signin', accountExists, accountHasBeenVerified ,signIn)
+router.post('/token',passport.authenticate('jwt', {session: false}), mustSignIn ,logInToken)
+router.put('/signout',passport.authenticate('jwt', {session: false}), signout)
 router.get('/verify/:code', verify)
 
+passport.authenticate('jwt', {session: false}) 
 
 module.exports = router;
