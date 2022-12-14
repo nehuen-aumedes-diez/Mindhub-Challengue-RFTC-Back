@@ -2,7 +2,8 @@ const User = require('../models/User')
 const bcryptjs = require('bcryptjs')
 const crypto = require('crypto')
 const accountVerificationEmail = require('./accountVerificationEmail')
-const { userSignedUpResponse, userNotFoundResponse } = require('../config/responses')
+const { userSignedUpResponse, userNotFoundResponse, invalidCredentialsResponse, userSignedOutResponse } = require('../config/responses')
+const jwt = require('jsonwebtoken')
 
 const controller = {
     signUp: async (req,res,next)=>{
@@ -36,6 +37,57 @@ const controller = {
             }
             return userNotFoundResponse(req,res)
         }catch(error){
+            next(error)
+        }
+    },
+    signIn: async (req,res,next)=>{
+        const {password} = req.body;
+        const {user} = req;
+        try{
+            const passwordVerify = bcryptjs.compareSync(password, user.password)
+
+            if(passwordVerify){
+                await User.findOneAndUpdate({_id: user.id},{logged: true}, {new: true})
+                const token = jwt.sign(
+                {id: user._id, nombre: user.name, photo: user.photo, logged: user.logged},
+                process.env.KEY_JWT,
+                {expiresIn: 60*60*24}
+                    )
+                    return res.status(200).json({
+                        response: { token: token},
+                        success: true,
+                        message: 'Welcome ' + user.name
+                    })
+            }
+            return invalidCredentialsResponse(req,res)
+        } catch(error){
+            next(error)
+        }
+    },
+    logInToken: async (req,res,next)=>{
+        let{user} = req
+        try{
+            return res.json({
+                response: {
+                    _id: user.id,
+                    name: user.name,
+                    photo : user.photo
+                },
+                success: true,
+                message: 'Welcome ' + user.name
+            })
+        } catch(error){
+            next(error)
+        }
+    },
+    signout: async (req,res,next)=>{
+
+        const {id}= req.user
+
+        try{
+            await User.findOneAndUpdate({_id: id}, {logged: false}, {new: true})
+            return userSignedOutResponse(req,res)
+        } catch(error){
             next(error)
         }
     }
