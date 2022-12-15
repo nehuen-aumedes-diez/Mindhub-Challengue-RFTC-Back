@@ -8,7 +8,7 @@ const jwt = require('jsonwebtoken')
 const controller = {
     signUp: async (req,res,next)=>{
 
-        let {name, lastName,photo, age, email,password} = req.body
+        let {name, email,password} = req.body
 
         let role = "user"
         let verified = false
@@ -17,7 +17,7 @@ const controller = {
         password = bcryptjs.hashSync(password,10)
 
         try{
-            User.create({name, lastName,photo, age, email,password, role,verified,logged,code})
+            User.create({name, email,password, role,verified,logged,code})
             await accountVerificationEmail(email, code)
             return userSignedUpResponse(req, res)
         } catch(error){
@@ -49,7 +49,7 @@ const controller = {
             if(passwordVerify){
                 await User.findOneAndUpdate({_id: user.id},{logged: true}, {new: true})
                 const token = jwt.sign(
-                {id: user._id, nombre: user.name, photo: user.photo, logged: user.logged},
+                {id: user._id, nombre: user.name, logged: user.logged},
                 process.env.KEY_JWT,
                 {expiresIn: 60*60*24}
                     )
@@ -71,7 +71,7 @@ const controller = {
                 response: {
                     _id: user.id,
                     name: user.name,
-                    photo : user.photo
+                    email: user.email
                 },
                 success: true,
                 message: 'Welcome ' + user.name
