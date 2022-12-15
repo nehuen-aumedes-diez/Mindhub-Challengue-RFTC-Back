@@ -4,12 +4,12 @@ let camisetasMujeres = [
         nombre: 'El Ciclón',
         foto1: 'https://cdn.shopify.com/s/files/1/0015/5841/3357/products/PERCHAS-ARGENTINA-WOMEN-CUERVO_550x.png?v=1627407396',
         foto2: 'https://cdn.shopify.com/s/files/1/0015/5841/3357/products/CUERVO-WOMEN-MODEL-1_550x.jpg?v=1627407396',
-        talle: 'S',
+        talle: ['S', 'M', 'L', 'XL'],
         descripcion: 'Puro y exclusivo producto de moda. Calidad premium fabricado en Perú. 100% algodón de alta calidad como del bordado. Corte slim fit.',
-        stock: 11,
+        stock: [11, 23, 5, 17],
         precio: 7100,
     },
-    {
+    /* {
         nombre: 'El Ciclón',
         foto1: 'https://cdn.shopify.com/s/files/1/0015/5841/3357/products/PERCHAS-ARGENTINA-WOMEN-CUERVO_550x.png?v=1627407396',
         foto2: 'https://cdn.shopify.com/s/files/1/0015/5841/3357/products/CUERVO-WOMEN-MODEL-1_550x.jpg?v=1627407396',
@@ -35,18 +35,18 @@ let camisetasMujeres = [
         descripcion: 'Puro y exclusivo producto de moda. Calidad premium fabricado en Perú. 100% algodón de alta calidad como del bordado. Corte slim fit.',
         stock: 17,
         precio: 7100,
-    },
+    }, */
     // ACADEMIA (Racing Club)
     {
         nombre: 'Academia',
         foto1: 'https://cdn.shopify.com/s/files/1/0015/5841/3357/products/PERCHAS-ARGENTINA-WOMEN-ACADE_550x.png?v=1627407421',
         foto2: 'https://cdn.shopify.com/s/files/1/0015/5841/3357/products/ACADE-WOMEN-1_550x.jpg?v=1627407421',
-        talle: 'S',
+        talle: ['S', 'M', 'L', 'XL'],
         descripcion: 'Puro y exclusivo producto de moda. Calidad premium fabricado en Perú. 100% algodón de alta calidad como del bordado. Corte slim fit.',
-        stock: 11,
+        stock: [11, 23, 5, 17],
         precio: 7100,
     },
-    {
+    /* {
         nombre: 'Academia',
         foto1: 'https://cdn.shopify.com/s/files/1/0015/5841/3357/products/PERCHAS-ARGENTINA-WOMEN-ACADE_550x.png?v=1627407421',
         foto2: 'https://cdn.shopify.com/s/files/1/0015/5841/3357/products/ACADE-WOMEN-1_550x.jpg?v=1627407421',
@@ -72,18 +72,18 @@ let camisetasMujeres = [
         descripcion: 'Puro y exclusivo producto de moda. Calidad premium fabricado en Perú. 100% algodón de alta calidad como del bordado. Corte slim fit.',
         stock: 17,
         precio: 7100,
-    },
+    }, */
     // XENEIZE (Boca Juniors)
     {
         nombre: 'Xeneize',
         foto1: 'https://cdn.shopify.com/s/files/1/0015/5841/3357/products/PERCHAS-ARGENTINA-WOMEN-ANCLA_550x.png?v=1627407389',
         foto2: 'https://cdn.shopify.com/s/files/1/0015/5841/3357/products/ANCLA-WOMEN-MODEL-1_550x.jpg?v=1627407389',
-        talle: 'S',
+        talle: ['S', 'M', 'L', 'XL'],
         descripcion: 'Puro y exclusivo producto de moda. Calidad premium fabricado en Perú. 100% algodón de alta calidad como del bordado. Corte slim fit.',
-        stock: 11,
+        stock: [11, 23, 5, 17],
         precio: 8300,
     },
-    {
+    /* {
         nombre: 'Xeneize',
         foto1: 'https://cdn.shopify.com/s/files/1/0015/5841/3357/products/PERCHAS-ARGENTINA-WOMEN-ANCLA_550x.png?v=1627407389',
         foto2: 'https://cdn.shopify.com/s/files/1/0015/5841/3357/products/ANCLA-WOMEN-MODEL-1_550x.jpg?v=1627407389',
@@ -109,18 +109,18 @@ let camisetasMujeres = [
         descripcion: 'Puro y exclusivo producto de moda. Calidad premium fabricado en Perú. 100% algodón de alta calidad como del bordado. Corte slim fit.',
         stock: 17,
         precio: 8300,
-    },
+    }, */
     // MILLONARIO (River Plate)
     {
         nombre: 'Millonario',
         foto1: 'https://cdn.shopify.com/s/files/1/0015/5841/3357/products/PERCHAS-ARGENTINA-WOMEN-GALLINA_550x.png?v=1627407429',
         foto2: 'https://cdn.shopify.com/s/files/1/0015/5841/3357/products/GALLINA-WOMEN-MODEL-1_550x.jpg?v=1627407429',
-        talle: 'S',
+        talle: ['S', 'M', 'L', 'XL'],
         descripcion: 'Puro y exclusivo producto de moda. Calidad premium fabricado en Perú. 100% algodón de alta calidad como del bordado. Corte slim fit.',
-        stock: 25,
+        stock: [25, 4, 11, 17],
         precio: 8300,
     },
-    {
+    /* {
         nombre: 'Millonario',
         foto1: 'https://cdn.shopify.com/s/files/1/0015/5841/3357/products/PERCHAS-ARGENTINA-WOMEN-GALLINA_550x.png?v=1627407429',
         foto2: 'https://cdn.shopify.com/s/files/1/0015/5841/3357/products/GALLINA-WOMEN-MODEL-1_550x.jpg?v=1627407429',
@@ -146,18 +146,18 @@ let camisetasMujeres = [
         descripcion: 'Puro y exclusivo producto de moda. Calidad premium fabricado en Perú. 100% algodón de alta calidad como del bordado. Corte slim fit.',
         stock: 17,
         precio: 8300,
-    },
+    }, */
     // SCALONETA (Argentina)
     {
         nombre: 'Scaloneta',
         foto1: 'https://cdn.shopify.com/s/files/1/0015/5841/3357/products/PERCHAS-ARGENTINA-WOMEN-SOL_550x.png?v=1627407437',
         foto2: 'https://cdn.shopify.com/s/files/1/0015/5841/3357/products/WOMEN-SQUARE-SOL_550x.png?v=1606990456',
-        talle: 'S',
+        talle: ['S', 'M', 'L', 'XL'],
         descripcion: 'Puro y exclusivo producto de moda. Calidad premium fabricado en Perú. 100% algodón de alta calidad como del bordado. Corte slim fit.',
-        stock: 4,
+        stock: [4, 3, 21, 19],
         precio: 7100,
     },
-    {
+    /* {
         nombre: 'Scaloneta',
         foto1: 'https://cdn.shopify.com/s/files/1/0015/5841/3357/products/PERCHAS-ARGENTINA-WOMEN-SOL_550x.png?v=1627407437',
         foto2: 'https://cdn.shopify.com/s/files/1/0015/5841/3357/products/WOMEN-SQUARE-SOL_550x.png?v=1606990456',
@@ -183,18 +183,18 @@ let camisetasMujeres = [
         descripcion: 'Puro y exclusivo producto de moda. Calidad premium fabricado en Perú. 100% algodón de alta calidad como del bordado. Corte slim fit.',
         stock: 19,
         precio: 7100,
-    },
+    }, */
     // SCALONETA negro (Argentina)
     {
         nombre: 'Scaloneta (negro)',
         foto1: 'https://cdn.shopify.com/s/files/1/0015/5841/3357/products/e39eff45-7b3c-413c-92fc-3df9e5948c7e_550x.jpg?v=1627415726',
         foto2: 'https://cdn.shopify.com/s/files/1/0015/5841/3357/products/SOL-NEGRO-WOMEN-MODEL-1_550x.jpg?v=1627415726',
-        talle: 'S',
+        talle: ['S', 'M', 'L', 'XL'],
         descripcion: 'Puro y exclusivo producto de moda. Calidad premium fabricado en Perú. 100% algodón de alta calidad como del bordado. Corte slim fit.',
-        stock: 4,
+        stock: [4, 3, 7, 39],
         precio: 7100,
     },
-    {
+    /* {
         nombre: 'Scaloneta (negro)',
         foto1: 'https://cdn.shopify.com/s/files/1/0015/5841/3357/products/e39eff45-7b3c-413c-92fc-3df9e5948c7e_550x.jpg?v=1627415726',
         foto2: 'https://cdn.shopify.com/s/files/1/0015/5841/3357/products/SOL-NEGRO-WOMEN-MODEL-1_550x.jpg?v=1627415726',
@@ -220,18 +220,18 @@ let camisetasMujeres = [
         descripcion: 'Puro y exclusivo producto de moda. Calidad premium fabricado en Perú. 100% algodón de alta calidad como del bordado. Corte slim fit.',
         stock: 39,
         precio: 7100,
-    },
+    }, */
     // EL ROJO (Independiente)
     {
         nombre: 'El rojo',
         foto1: 'https://cdn.shopify.com/s/files/1/0015/5841/3357/products/PERCHAS-ARGENTINA-WOMEN-DIABLO_550x.jpg?v=1627407406',
         foto2: 'https://cdn.shopify.com/s/files/1/0015/5841/3357/products/CLOSEUP-DIABLO_d9fd9cad-ec44-4574-a3b1-8a60c1099a5c_550x.png?v=1608828828',
-        talle: 'S',
+        talle: ['S', 'M', 'L', 'XL'],
         descripcion: 'Puro y exclusivo producto de moda. Calidad premium fabricado en Perú. 100% algodón de alta calidad como del bordado. Corte slim fit.',
-        stock: 28,
+        stock: [28, 22, 3, 5],
         precio: 7100,
     },
-    {
+/*     {
         nombre: 'El rojo',
         foto1: 'https://cdn.shopify.com/s/files/1/0015/5841/3357/products/PERCHAS-ARGENTINA-WOMEN-DIABLO_550x.jpg?v=1627407406',
         foto2: 'https://cdn.shopify.com/s/files/1/0015/5841/3357/products/CLOSEUP-DIABLO_d9fd9cad-ec44-4574-a3b1-8a60c1099a5c_550x.png?v=1608828828',
@@ -257,7 +257,7 @@ let camisetasMujeres = [
         descripcion: 'Puro y exclusivo producto de moda. Calidad premium fabricado en Perú. 100% algodón de alta calidad como del bordado. Corte slim fit.',
         stock: 5,
         precio: 7100,
-    },
+    }, */
 ]
 
 require('dotenv').config()
