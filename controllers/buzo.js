@@ -22,7 +22,7 @@ const controller = {
         let order = {}
 
         if (req.query.order) {
-            order = { stock: req.query.order }
+            order = { precio: req.query.order }
         }
 
         if (req.query.userId) {
@@ -37,13 +37,27 @@ const controller = {
                 _id: req.query._id
             }
         }
+        if (req.query.nombre) {
+            query = {
+                ...query,
+                nombre: { $regex: req.query.nombre, $options: "i"}
+            }
+        }
         try {
             let todosBuzos = await Buzo.find(query).sort(order)
-            res.status(200).json({
-                res: todosBuzos,
-                success: true,
-                message: "se encontraron buzos de manera exitosa"
-            })
+            if (todosBuzos){
+                res.status(200).json({
+                    res: todosBuzos,
+                    success: true,
+                    message: "Se encontraron buzos de manera exitosa"
+                })
+            }
+            else{
+                res.status(404).json({
+                    success: false,
+                    message: "No se encontraron buzos, intente de nuevo!"
+                })
+            }
         } catch (error) {
             res.status(404).json({
                 success: false,

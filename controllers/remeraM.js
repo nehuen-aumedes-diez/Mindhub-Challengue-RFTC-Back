@@ -22,7 +22,7 @@ const controller = {
         let order = {}
 
         if (req.query.order) {
-            order = { stock: req.query.order }
+            order = { precio: req.query.order }
         }
 
         if (req.query.userId) {
@@ -37,15 +37,29 @@ const controller = {
                 _id: req.query._id
             }
         }
+        if (req.query.nombre) {
+            query = {
+                ...query,
+                nombre: { $regex: req.query.nombre, $options: "i"}
+            }
+        }
         try {
             let todasRemeras = await Remera.find(query).sort(order)
-            res.status(200).json({
-                res: todasRemeras,
-                success: true,
-                message: "se encontraron Remeras de manera exitosa"
-            })
+            if (todasRemeras){
+                res.status(200).json({
+                    res: todasRemeras,
+                    success: true,
+                    message: "Se encontraron remeras de manera exitosa"
+                })
+            }
+            else{
+                res.status(404).json({
+                    success: false,
+                    message: "No se encontraron remeras, intente de nuevo!"
+                })
+            }
         } catch (error) {
-            res.status(404).json({
+            res.status(400).json({
                 success: false,
                 message: error.message
             })
