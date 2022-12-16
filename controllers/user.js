@@ -5,6 +5,7 @@ const accountVerificationEmail = require('./accountVerificationEmail')
 const { userSignedUpResponse, userNotFoundResponse, invalidCredentialsResponse, userSignedOutResponse } = require('../config/responses')
 const jwt = require('jsonwebtoken')
 
+
 const controller = {
     signUp: async (req,res,next)=>{
 
