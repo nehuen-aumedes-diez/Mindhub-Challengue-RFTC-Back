@@ -33,7 +33,7 @@ const controller = {
         try{  
             let user = await User.findOneAndUpdate({code: code}, {verified: true }, {new: true})
             if(user){
-                return res.redirect('http://localhost:3000/')
+                return res.redirect('http://localhost:3000/signinsignup')
             }
             return userNotFoundResponse(req,res)
         }catch(error){
@@ -54,7 +54,7 @@ const controller = {
                 {expiresIn: 60*60*24}
                     )
                     return res.status(200).json({
-                        response: { token: token},
+                        response: { user, token},
                         success: true,
                         message: 'Welcome ' + user.name
                     })
@@ -71,7 +71,8 @@ const controller = {
                 response: {
                     _id: user.id,
                     name: user.name,
-                    email: user.email
+                    email: user.email,
+                    role: user.role
                 },
                 success: true,
                 message: 'Welcome ' + user.name
