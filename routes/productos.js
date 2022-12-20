@@ -9,5 +9,3 @@ router.route('/').post(validatorProductos(schema),create)
 router.patch('/:id',update)
 router.delete('/:id',destroy)
 router.get("/:id", readOne);
-
-module.exports = router;
