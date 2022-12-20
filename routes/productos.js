@@ -1,11 +1,13 @@
 let router = require('express').Router()
 const schema = require('../schemas/productos')
-const validatorProductos = require('../middlewares/validadProductos')
+const validatorProducto = require('../middlewares/validatorProduct')
 
-let {create, read, update, destroy, readOne} = require('../controllers/productos')
+let {create, read, update, destroy, readOne} = require('../controllers/producto')
 
 router.route('/').get(read)
-router.route('/').post(validatorProductos(schema),create)
+router.route('/').post(validatorProducto(schema),create)
 router.patch('/:id',update)
 router.delete('/:id',destroy)
 router.get("/:id", readOne);
+
+module.exports = router
