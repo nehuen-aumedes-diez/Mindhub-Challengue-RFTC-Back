@@ -10,5 +10,5 @@ const schema = new mongoose.Schema({
     precio: {type: Number, required: true},
 })
 
-const Buzo = mongoose.model('buzos',schema)
-module.exports = Buzo
+const CamisetaMujer = mongoose.model('camisetasMujeres', schema)
+module.exports = CamisetaMujer

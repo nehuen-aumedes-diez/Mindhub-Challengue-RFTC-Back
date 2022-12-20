@@ -1,12 +1,12 @@
-const Buzo = require('../models/buzo')
+const Remera = require('../models/CamisetaHombre')
 
 const controller = {
 
     create: async (req, res) => {
         try {
-            let newBuzo = await Buzo.create(req.body)
+            let newRemera = await Remera.create(req.body)
             res.status(201).json({
-                stock: newBuzo.stock,
+                stock: newRemera.stock,
                 success: true,
                 message: "se cargo el articulo de manera exitosa"
             })
@@ -44,22 +44,22 @@ const controller = {
             }
         }
         try {
-            let todosBuzos = await Buzo.find(query).sort(order)
-            if (todosBuzos){
+            let todasRemeras = await Remera.find(query).sort(order)
+            if (todasRemeras){
                 res.status(200).json({
-                    res: todosBuzos,
+                    res: todasRemeras,
                     success: true,
-                    message: "Se encontraron buzos de manera exitosa"
+                    message: "Se encontraron remeras de manera exitosa"
                 })
             }
             else{
                 res.status(404).json({
                     success: false,
-                    message: "No se encontraron buzos, intente de nuevo!"
+                    message: "No se encontraron remeras, intente de nuevo!"
                 })
             }
         } catch (error) {
-            res.status(404).json({
+            res.status(400).json({
                 success: false,
                 message: error.message
             })
@@ -68,16 +68,16 @@ const controller = {
     readOne: async (req, res) => {
         let id = req.params.id;
         try {
-            let findBuzo = await Buzo.findOne({ _id: id });
-            if (findBuzo) {
+            let findRemera = await Remera.findOne({ _id: id });
+            if (findRemera) {
                 res.status(200).json({
-                    message: "Buzo encontrado",
-                    response: findBuzo,
+                    message: "Remera encontrada",
+                    response: findRemera,
                     success: true,
                 });
             } else {
                 res.status(404).json({
-                    message: "No se puede encontrar el Buzo",
+                    message: "No se puede encontrar la Remerar",
                     success: false,
                 });
             }
@@ -92,17 +92,17 @@ const controller = {
     update: async (req, res) => {
         let { id } = req.params
         try {
-            let BuzoU = await Buzo.findOneAndUpdate({ _id: id }, req.body, { new: true })
-            if (BuzoU) {
+            let RemeraU = await Remera.findOneAndUpdate({ _id: id }, req.body, { new: true })
+            if (RemeraU) {
                 res.status(200).json({
-                    id: BuzoU._id,
+                    id: RemeraU._id,
                     success: true,
-                    message: "se modificaron los datos del buzo de manera exitosa"
+                    message: "se modificaron los datos de la remera de manera exitosa"
                 })
             } else {
                 res.status(400).json({
                     success: false,
-                    message: "no se encontro el Buzo"
+                    message: "no se encontro la remera"
                 })
             }
 
@@ -116,17 +116,17 @@ const controller = {
     destroy: async (req, res) => {
         let { id } = req.params
         try {
-            let BuzoD = await Buzo.findOneAndDelete({ _id: id })
-            if (BuzoD) {
+            let RemeraD = await Remera.findOneAndDelete({ _id: id })
+            if (RemeraD) {
                 res.status(200).json({
-                    id: BuzoD._id,
+                    id: RemeraD._id,
                     success: true,
-                    message: "se elimino el buzo de manera exitosa"
+                    message: "se elimino la remera de manera exitosa"
                 })
             } else {
                 res.status(404).json({
                     success: false,
-                    message: "no se encontro el Buzo"
+                    message: "no se encontro la remera"
                 })
             }
         } catch (error) {
