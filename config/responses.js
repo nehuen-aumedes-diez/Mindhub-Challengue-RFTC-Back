@@ -1,49 +1,49 @@
 function userExistsResponse(req,res) {
     return res.status(400).json({
         success: false,
-        message: 'user already exists'
+        message: 'El usuario ya existe'
     })
 }
 
 function userSignedUpResponse(req,res) {
     return res.status(201).json({
         success: true,
-        message: 'user signed up'
+        message: 'Usuario registrado'
     })
 }
 
 function userSignedOutResponse(req,res) {
     return res.status(201).json({
         success: true,
-        message: 'user signed out'
+        message: 'Gracias por visitarnos!'
     })
 }
 
 function userNotFoundResponse(req,res) {
     return res.status(404).json({
         success: false,
-        message: 'user not found'
+        message: 'usuario no encontrado'
     })
 }
 
 function mustSignInResponse(req,res) {
     return res.status(400).json({
         success: false,
-        message: 'sign in please!'
+        message: 'Por favor registrate!'
     })
 }
 
 function invalidCredentialsResponse(req,res) {
     return res.status(401).json({
         success: false,
-        message: 'email or password incorrect'
+        message: 'Email o contraseña incorrecta'
     })
 }
 
 function verifyResponse(req,res) {
     return res.status(401).json({
         success: false,
-        message: 'Please, verify your email account and try again'
+        message: 'Por favor, verifica tu cuenta de email y proba de nuevo!'
     })
 }
 
