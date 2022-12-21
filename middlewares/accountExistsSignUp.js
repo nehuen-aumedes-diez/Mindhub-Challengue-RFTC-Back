@@ -1,12 +1,9 @@
 const User = require("../models/User");
 const { userExistsResponse } = require("../config/responses");
 
-async function accountExists(req, res, next) {
-    const user = await User.findByEmail(req.body.email)
-    if (user) {
-        userExistsResponse(req,res)
-    }
-    return next()
+async function accountExistssu(req, res, next) {
+    const user = await User.findOne({email:req.body.email})
+    user? userExistsResponse(req,res) : next()
 }
 
-module.exports = { accountExists }
+module.exports = { accountExistssu }
