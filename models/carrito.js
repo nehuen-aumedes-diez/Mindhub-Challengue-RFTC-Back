@@ -6,10 +6,10 @@ const schema = new mongoose.Schema({
     stock: {type: Number, required: true},
     talle: {type: Number, required: true},
     precio: {type: Number, required: true},
-    idProducto: {type: mongoose.Types.ObjectId, ref: "product", required: true},
+    idProducto: {type: mongoose.Types.ObjectId, ref: "productos", required: true},
     userId:{type: mongoose.Types.ObjectId, ref: "users", required: true},
     estadoCompra: {type:String, required:true}
 })
 
-const Producto = mongoose.model('Producto',schema)
-module.exports = Producto
+const Carrito = mongoose.model('carrito',schema)
+module.exports = Carrito
