@@ -1,12 +1,12 @@
-const Gorra = require('../models/gorra')
+const Producto = require('../models/producto')
 
 const controller = {
 
     create: async (req, res) => {
         try {
-            let newGorra = await Gorra.create(req.body)
+            let newProducto = await Producto.create(req.body)
             res.status(201).json({
-                stock: newGorra.stock,
+                stock: newProducto.stock,
                 success: true,
                 message: "se cargo el articulo de manera exitosa"
             })
@@ -43,19 +43,25 @@ const controller = {
                 nombre: { $regex: req.query.nombre, $options: "i"}
             }
         }
+        if (req.query.tipo) {
+            query = {
+                ...query,
+                tipo: { $regex: req.query.tipo, $options: "i"}
+            }
+        }
         try {
-            let todasGorras = await Gorra.find(query).sort(order)
-            if (todasGorras){
+            let todosProductos = await Producto.find(query).sort(order)
+            if (todosProductos){
                 res.status(200).json({
-                    res: todasGorras,
+                    res: todosProductos,
                     success: true,
-                    message: "Se encontraron gorras de manera exitosa"
+                    message: "Se encontraron productos de manera exitosa"
                 })
             }
             else{
                 res.status(404).json({
                     success: false,
-                    message: "No se encontraron gorras, intente de nuevo!"
+                    message: "No se encontraron productos, intente de nuevo!"
                 })
             }
         } catch (error) {
@@ -68,16 +74,16 @@ const controller = {
     readOne: async (req, res) => {
         let id = req.params.id;
         try {
-            let findGorra = await Gorra.findOne({ _id: id });
-            if (findGorra) {
+            let findProducto = await Producto.findOne({ _id: id });
+            if (findProducto) {
                 res.status(200).json({
-                    message: "Gorra encontrada",
-                    response: findGorra,
+                    message: "producto encontrado",
+                    response: findProducto,
                     success: true,
                 });
             } else {
                 res.status(404).json({
-                    message: "No se puede encontrar la gorrar",
+                    message: "No se puede encontrar el producto",
                     success: false,
                 });
             }
@@ -92,17 +98,17 @@ const controller = {
     update: async (req, res) => {
         let { id } = req.params
         try {
-            let GorraU = await Gorra.findOneAndUpdate({ _id: id }, req.body, { new: true })
-            if (GorraU) {
+            let productoU = await Producto.findOneAndUpdate({ _id: id }, req.body, { new: true })
+            if (productoU) {
                 res.status(200).json({
-                    id: GorraU._id,
+                    id: productoU._id,
                     success: true,
-                    message: "se modificaron los datos del Gorra de manera exitosa"
+                    message: "se modificaron los datos del producto de manera exitosa"
                 })
             } else {
                 res.status(400).json({
                     success: false,
-                    message: "no se encontro el Gorra"
+                    message: "no se encontro el producto"
                 })
             }
 
@@ -116,17 +122,17 @@ const controller = {
     destroy: async (req, res) => {
         let { id } = req.params
         try {
-            let GorraD = await Gorra.findOneAndDelete({ _id: id })
-            if (GorraD) {
+            let productoD = await Producto.findOneAndDelete({ _id: id })
+            if (productoD) {
                 res.status(200).json({
-                    id: GorraD._id,
+                    id: productoD._id,
                     success: true,
-                    message: "se elimino la gorra de manera exitosa"
+                    message: "se elimino el producto de manera exitosa"
                 })
             } else {
                 res.status(404).json({
                     success: false,
-                    message: "no se encontro la gorra"
+                    message: "no se encontro el producto"
                 })
             }
         } catch (error) {
@@ -138,3 +144,5 @@ const controller = {
     }
 
 }
+
+module.exports = controller
